@@ -16,8 +16,8 @@ export type Category = {
 
 export const CATEGORIES: Category[] = [
   {
-    name: "Jaimala",
-    title: "Jaimala",
+    name: "Wedding Jaimala",
+    title: "Wedding Jaimala",
     slug: "jaimala",
     image: "/categories_poster/jaimala2.jpg",
   },

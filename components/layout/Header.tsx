@@ -233,7 +233,7 @@ const Header = () => {
                   height={36}
                   priority
                 />
-                <span className="hidden sm:inline text-2xl font-semibold text-pink-600">
+                <span className="hidden lg:inline text-2xl font-semibold text-pink-600">
                   PhoolPatta
                 </span>
               </Link>
@@ -439,7 +439,7 @@ const Header = () => {
         {/* CATEGORY NAV */}
         <div className="hidden md:block border-t border-pink-100 bg-white/80">
           <nav className="mx-auto max-w-7xl px-4">
-            <ul className="flex flex-wrap gap-x-6 gap-y-2 py-3 text-sm font-medium text-gray-700">
+            <ul className="flex flex-wrap gap-x-4 gap-y-2 py-3 text-sm font-medium text-gray-700">
               {headerCategories.map((item) => (
                 <li key={item.slug}>
                   <Link
