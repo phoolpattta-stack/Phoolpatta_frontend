@@ -233,7 +233,7 @@ const Header = () => {
                   height={36}
                   priority
                 />
-                <span className="text-2xl font-semibold text-pink-600">
+                <span className="hidden sm:inline text-2xl font-semibold text-pink-600">
                   PhoolPatta
                 </span>
               </Link>
