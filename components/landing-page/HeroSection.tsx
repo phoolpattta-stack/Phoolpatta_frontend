@@ -60,19 +60,12 @@ const HeroSection = () => {
      NAVIGATION HANDLERS
   -------------------------------------------------------- */
   const prev = () => {
-    setCurrent((prev) =>
-      prev === 0 ? banners.length - 1 : prev - 1
-    );
+    setCurrent((prev) => (prev === 0 ? banners.length - 1 : prev - 1));
   };
 
   const next = () => {
-    setCurrent((prev) =>
-      prev === banners.length - 1 ? 0 : prev + 1
-    );
+    setCurrent((prev) => (prev === banners.length - 1 ? 0 : prev + 1));
   };
-
-  
-
 
   return (
     <section className="relative max-w-7xl mx-auto px-4 pt-6">
@@ -80,7 +73,7 @@ const HeroSection = () => {
       <div
         className="
           relative
-          h-[220px] sm:h-[280px] md:h-[360px]
+          h-[200px] sm:h-[280px] md:h-[360px]
           rounded-2xl
           border border-pink-200
           overflow-hidden
@@ -107,25 +100,45 @@ const HeroSection = () => {
         ))}
 
         {/* TEXT + CTA */}
-        <div className="relative z-20 flex flex-col items-start justify-center h-full text-left
+        {/* <div className="relative z-20 flex flex-col items-start justify-center h-full text-left
                         px-5 sm:px-6 md:px-8
                         max-w-full sm:max-w-lg md:max-w-xl
                         py-6 sm:py-0
-                      ">
+                      "> */}
+        <div
+          className="
+    relative z-20 flex flex-col items-start text-left h-full
+    justify-start sm:justify-center
+    pt-6 sm:pt-0
+    px-4 sm:px-6 md:px-8
+    max-w-full sm:max-w-lg md:max-w-xl
+  "
+        >
           <h2 className="text-xl sm:text-2xl md:text-3xl  font-semibold text-white">
-            🌸 {banners[current].title}
+            {banners[current].title}
           </h2>
 
           <p className="text-sm sm:text-base text-white/90 mt-2 ">
             Premium floral arrangements for weddings & special occasions
           </p>
 
-          <div className="mt-5 flex gap-4">
+          {/* <div className="mt-5 flex gap-4"> */}
+          <div className="mt-4 flex flex-row gap-3 items-center">
             <button
-              onClick={() =>
-                router.push(`/category/${banners[current].slug}`)
-              }
-              className="bg-pink-600 text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-pink-700 transition hover:cursor-pointer"
+              onClick={() => router.push(`/category/${banners[current].slug}`)}
+              //   className="
+              //   bg-pink-600 text-white px-5 py-2.5 rounded-full text-sm font-medium
+              //   hover:bg-pink-700 transition hover:cursor-pointer"
+              // >
+              className="
+   bg-pink-600 text-white
+    px-5 py-2
+    rounded-full
+    text-sm font-medium
+    shadow-sm
+    hover:bg-pink-700 transition
+    hover:cursor-pointer
+  "
             >
               Explore
             </button>
@@ -134,7 +147,18 @@ const HeroSection = () => {
               href={`https://wa.me/${WHATSAPP_PHONE_NUMBER}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="border border-white text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-white hover:text-gray-900 transition"
+              // className="border border-white text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-white hover:text-gray-900 transition"
+              // >
+              className="
+   hidden sm:inline-flex
+    border border-white
+    text-white
+    px-4 py-2
+    rounded-full
+    text-sm font-medium
+    hover:bg-white hover:text-gray-900
+    transition
+  "
             >
               Order through WhatsApp
             </a>
