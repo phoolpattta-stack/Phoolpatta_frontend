@@ -7,18 +7,18 @@ const TopBar = () => {
   return (
     <div className="w-full bg-pink-600 text-white text-xs sm:text-sm">
       <div className="max-w-7xl mx-auto px-4 py-2 flex flex-wrap items-center justify-center gap-2 text-center">
-
         {/* DELIVERY TEXT */}
-        <span className="font-medium">
-          🚚 Same Day Delivery in Delhi
-        </span>
+        <span className="font-medium">🚚 Same Day Delivery in Delhi</span>
 
         {/* SEPARATOR */}
         <span className="hidden sm:inline">|</span>
 
         {/* OFFER TEXT */}
-        <span>
-          🎉 Valentine's Week Offer • Custom Flower Orders Available
+        {/* <span>🎉 Valentine's Week Offer • Custom Flower Orders Available</span>
+        <span className="hidden sm:inline">|</span> */}
+
+        <span className="font-medium">
+          🎁 Launch Offer: Use code <strong>PHOOL10</strong> & get 10% OFF
         </span>
 
         {/* SEPARATOR */}
@@ -39,7 +39,6 @@ const TopBar = () => {
           />
           Order on WhatsApp
         </a>
-
       </div>
     </div>
   );

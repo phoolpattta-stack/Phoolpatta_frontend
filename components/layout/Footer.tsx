@@ -74,7 +74,7 @@ const Footer = () => {
             <h5 className="font-semibold text-gray-800 mb-4">
               Flower Categories
             </h5>
-            <ul className="space-y-2 text-gray-600">
+            {/* <ul className="space-y-2 text-gray-600">
               <li>
                 <Link href="/category/jaimala" className="hover:text-pink-600">
                   Jaimala
@@ -109,7 +109,47 @@ const Footer = () => {
                   Bed Decoration
                 </Link>
               </li>
-            </ul>
+            </ul> */}
+            {/* <ul className="space-y-2 text-gray-600">
+    <li>Rose (All Colors)</li>
+    <li>Gerbera (Seasonal)</li>
+    <li>Carnation (Seasonal)</li>
+    <li>Lily (Seasonal)</li>
+    <li>Orchid (On Demand)</li>
+    <li>Anthurium</li>
+    <li>Gladiolus</li>
+    <li>Marigold (Genda)</li>
+    <li>Sunflower (Surajmukhi)</li>
+    <li>Desi Gulab</li>
+    <li>Tuberose (Rajnigandha)</li>
+    <li>Jasmine (Mogra)</li>
+    <li>Lotus (Kamal)</li>
+    <li>Daisy</li>
+    <li>Artificial Flowers</li>
+  </ul> */}
+  <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-1 text-gray-600">
+  <li>Rose</li>
+<li>Lily</li>
+<li>Orchid</li>
+<li>Daisy</li>
+<li>Lotus</li>
+<li>Gerbera</li>
+<li>Carnation</li>
+<li>Marigold</li>
+<li>Sunflower</li>
+
+
+<li>Jasmine</li>
+<li>Tuberose</li>
+
+<li>Anthurium</li>
+<li>Gladiolus</li>
+<li>Desi Gulab</li>
+
+  {/* <li>Artificial Flowers</li> */}
+</ul>
+
+
           </div>
 
           {/* ================= SERVICES ================= */}
@@ -184,7 +224,7 @@ const Footer = () => {
 
       {/* ================= BOTTOM BAR ================= */}
       <div className="border-t border-gray-300 py-4 text-center text-sm text-gray-700">
-        <p>🇮🇳 Made in India</p>
+        <p>🇮🇳 Proudly Made in India</p>
         <p>
           © {new Date().getFullYear()} Manoj Florist • Powered by PhoolPatta
         </p>
