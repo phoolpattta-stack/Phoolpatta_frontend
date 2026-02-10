@@ -93,6 +93,8 @@ export const metadata: Metadata = {
   description:
     "Order fresh flowers, bouquets, and floral arrangements online from PhoolPatta. Same-day delivery, premium quality, perfect for every occasion.",
 
+  
+
   keywords: [
     "online flower delivery",
     "buy flowers online",

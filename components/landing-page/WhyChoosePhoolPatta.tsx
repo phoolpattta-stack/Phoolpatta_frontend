@@ -7,29 +7,56 @@ import {
   MessageCircle,
 } from "lucide-react";
 
+// const features = [
+//   {
+//     title: "Fresh & Handpicked Flowers",
+//     description:
+//       "We use premium, fresh flowers crafted daily by expert florists.",
+//     icon: Flower,
+//   },
+//   {
+//     title: "Same-Day Delivery in Delhi",
+//     description:
+//       "Order before 2 PM and get flowers delivered the same day.",
+//     icon: Truck,
+//   },
+//   {
+//     title: "Trusted Local Florist",
+//     description:
+//       "Manoj Florist — serving weddings & events with years of trust.",
+//     icon: Store,
+//   },
+//   {
+//     title: "Custom Orders on WhatsApp",
+//     description:
+//       "Personalised flower designs & wedding decor via WhatsApp.",
+//     icon: MessageCircle,
+//   },
+// ];
+
 const features = [
   {
     title: "Fresh & Handpicked Flowers",
     description:
-      "We use premium, fresh flowers crafted daily by expert florists.",
+      "Premium fresh flowers crafted daily by expert florists for every occasion.",
     icon: Flower,
   },
   {
-    title: "Same-Day Delivery in Delhi",
+    title: "Same-Day Flower Delivery in Delhi",
     description:
-      "Order before 2 PM and get flowers delivered the same day.",
+      "Reliable same-day flower delivery across Delhi with careful handling and timely service.",
     icon: Truck,
   },
   {
     title: "Trusted Local Florist",
     description:
-      "Manoj Florist — serving weddings & events with years of trust.",
+      "Manoj Florist, a trusted local flower shop for weddings, events, and celebrations.",
     icon: Store,
   },
   {
     title: "Custom Orders on WhatsApp",
     description:
-      "Personalised flower designs & wedding decor via WhatsApp.",
+      "Personalised flower bouquets, wedding decor, and custom floral designs via WhatsApp.",
     icon: MessageCircle,
   },
 ];
